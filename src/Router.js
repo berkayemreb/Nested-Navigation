@@ -18,7 +18,7 @@ const Stack = createNativeStackNavigator();
 
 const ShowProfilePage = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName='ProfileScreen'>
       <Stack.Screen name="ProfileScreen" component={Profile} />
       <Stack.Screen name="ProfileEditScreen" component={ProfileEdit} />
     </Stack.Navigator>
@@ -27,7 +27,7 @@ const ShowProfilePage = () => {
 
 const ShowMemberPage = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName='MemberScreen'>
       <Stack.Screen name='MemberScreen' component={Member} />
       <Stack.Screen name='MemberDetailScreen' component={MemberDetail} />
       <Stack.Screen name='MemberUpdateScreen' component={MemberUpdate} />
