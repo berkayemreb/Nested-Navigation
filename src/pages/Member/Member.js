@@ -1,10 +1,21 @@
 import React from "react";
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView, Text, Button } from 'react-native';
 
-const Member = () => {
+const Member = ({ navigation }) => {
+
+    const goToMemberDetail = () => {
+        navigation.navigate('MemberDetailScreen');
+    }
+
+    const goToMemberUpdate = () => {
+        navigation.navigate('MemberUpdateScreen');
+    }
+
     return (
         <SafeAreaView>
             <Text>Member Page</Text>
+            <Button title="Go To Member Detail Page!" onPress={goToMemberDetail} />
+            <Button title="Go To Member Update Page!" onPress={goToMemberUpdate} />
         </SafeAreaView>
     )
 }

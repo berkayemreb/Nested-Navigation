@@ -1,7 +1,7 @@
 import React from "react";
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView, Text, Button } from 'react-native';
 
-const MemberUpdate = () => {
+const MemberUpdate = ({ navigation }) => {
     return (
         <SafeAreaView>
             <Text>MemberUpdate Page</Text>
